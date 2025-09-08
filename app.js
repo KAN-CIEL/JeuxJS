@@ -69,10 +69,10 @@ exp.ws('/qr', function (ws, req) {
 
 
     function NouvelleQuestion() {
-        var x = GetRandomInt(11);
-        var y = GetRandomInt(11);
-        question = x + '*' + y + ' =  ?';
-        bonneReponse = x * y;
+        var x = GetRandomInt(256);
+        //var y = GetRandomInt(11);
+        question = x + ' en base 2';
+        bonneReponse = x.toString(2);
         aWss.broadcast(question);
     }
 
