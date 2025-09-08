@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <script type="text/javascript" src="js/echo.js"></script>
     <title>TP Javscript</title>
 </head>
 <body>
@@ -10,6 +11,15 @@
         <h1>Ceci est mon titre</h1>
         <section>
             Coucou
+            <div>
+                <label>Message à envoyer : </label>
+                <input type="text" id="messageEnvoi">
+                <input type="button" id="Envoyer" value="Envoyer">
+            </div>
+            <div>
+                <label>Message reçu : </label>
+                <input type="text" id="messageRecu" readonly>
+            </div>
         </section>
         <footer>
             Saïba Kanté - TP Javascript
